@@ -19,5 +19,14 @@ public class _03_Variables {
 
         boolean pass =true;
         System.out.println("이번 시험에 합격했을까요? " + pass);
+
+        double d = 3.141234556546;
+        float f = 3.1400003423F; // 실수는 float으로 받으려면 F또는 f ex. 3.14F / 3.14f
+        System.out.println(d);
+        System.out.println(f);
+
+        long l = 1000000000000l; // int 범위(약) : -21억 ~ +21억 >> 범위 벗어날때는 long
+        l = 1_000_000_000_000L;
+        System.out.println(l);
     }
 }
