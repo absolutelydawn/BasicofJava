@@ -37,5 +37,37 @@ public class _01_Operator1 {
 
         c = a % b;
         System.out.println(c); // 0
+
+        // 증감 연산 ++ --
+        int val;
+        val = 10;
+        System.out.println(val); // 10
+        System.out.println(++val); // val + 1 -> sout 실행 : 11
+        System.out.println(val); // 11
+
+        val = 10;
+        System.out.println(val); // 10
+        System.out.println(val++); // sout(val) -> ++ : 10
+        System.out.println(val); // 11
+
+        val = 10;
+        System.out.println(val); // 10
+        System.out.println(--val); // 9
+        System.out.println(val); // 9
+
+        val = 10;
+        System.out.println(val); // 10
+        System.out.println(val--); // 10
+        System.out.println(val); // 9
+
+        // 예제 : 은행 대기 번호 표
+        int waiting = 0;
+        System.out.println("대기 인원 : " + waiting++); // 0
+        System.out.println("대기 인원 : " + waiting++); // 1
+        System.out.println("대기 인원 : " + waiting++); // 2
+        System.out.println("대기 인원 : " + waiting++); // 3
+        System.out.println("대기 인원 : " + waiting++); // 4
+
+        System.out.println("총 대기 인원 : " + waiting); // 5
     }
 }
